@@ -13,6 +13,7 @@ group by customer_id
 order by customer_id
 
 -- 2. How many days has each customer visited the restaurant?
+
 select customer_id,distinct(count(order_date)) as "Total days customer visited" from dannys_diner.sales
 group by customer_id 
 
