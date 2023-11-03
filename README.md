@@ -1,4 +1,5 @@
 -- 1. What is the total amount each customer spent at the restaurant?
+
 SELECT M.product_id,sum(M.price) as Total_amount,S.customer_id
 FROM dannys_diner.menu as M
 inner join dannys_diner.sales as S
